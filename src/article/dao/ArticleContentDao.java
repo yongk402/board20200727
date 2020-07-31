@@ -50,9 +50,10 @@ public class ArticleContentDao {
 			
 			if(rs.next()) {
 				content = new ArticleContent(
-						rs.getInt("article_no"), rs.getString("content"));
+						rs.getInt("article_no"), rs.getString("content"), rs.getString("fileName"));
 			}
 			return content;
+			
 		} finally {
 			JdbcUtil.close(rs);
 			JdbcUtil.close(pstmt);

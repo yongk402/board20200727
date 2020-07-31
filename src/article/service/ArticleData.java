@@ -20,4 +20,9 @@ public class ArticleData {
 		return content.getContent();	}
 	
 	
+	public String getFileName() {
+		return content.getFileName();
+	}
+	
+	
 }

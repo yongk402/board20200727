@@ -120,8 +120,7 @@ public class ControllerUsingURI extends HttpServlet {
 		
 		// RequestDispatch를 사용하여 알맞은 뷰로 포워딩
 		if(view != null) {
-		request.getRequestDispatcher(view)
-		.forward(request, response);
+		request.getRequestDispatcher(view).forward(request, response);
 		}
 		
 //		request.getRequestDispatcher(view)

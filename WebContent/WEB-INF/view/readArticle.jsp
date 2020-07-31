@@ -32,8 +32,18 @@
 </tr>
 <tr>
 	<td>내용</td>
+	<td style="white-space: pre-wrap;">
+	
+		
+	<c:if test="${not empty articleData.fileName }">
+		<img src="c:/images/${articleData.article.number}/${articleData.fileName}" alt="" />
+	</c:if>
+	
+	<c:out value="${articleData.content }" />
+	
+	
+	</td>
 	<!-- pre-wrap : 작성한데로 화면 출력하게 한다.(script공격으로부터 보호위함) -->
-	<td style="white-space: pre-wrap;"><u:pre value="${articleData.content }" /></td>
 	<!-- <td><u:pre value="${articleData.content }" /></td> -->
 </tr>
 <tr>
